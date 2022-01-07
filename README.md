@@ -31,7 +31,7 @@ cIWj07dy3tk7Lc6i1e88TGWjX2N0Z2d1
 
 ## Benchmarks
 
-See benchmark details in [randstring_test.go](github.com/kaibox-git/randstring/randstring_test.go)
+See benchmark details in [randstring_test.go](https://github.com/kaibox-git/randstring/blob/main/randstring_test.go)
 
 ```
 BenchmarkCreate-8               	 7968715	       141.2 ns/op	      32 B/op	       1 allocs/op
