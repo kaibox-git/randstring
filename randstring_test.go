@@ -9,7 +9,15 @@ import (
 	"github.com/kaibox-git/randstring/benchmarks/randseq"
 	"github.com/kaibox-git/randstring/benchmarks/randstr"
 	"github.com/kaibox-git/randstring/benchmarks/randstring"
+	"github.com/stretchr/testify/require"
 )
+
+func TestCreate(t *testing.T) {
+	s := Create(32)
+	require.Len(t, s, 32)
+	s = Create(64)
+	require.Len(t, s, 64)
+}
 
 func BenchmarkCreate(b *testing.B) {
 	for i := 0; i < b.N; i++ {
