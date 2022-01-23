@@ -13,10 +13,8 @@ import (
 )
 
 func TestCreate(t *testing.T) {
-	s := Create(32)
-	require.Len(t, s, 32)
-	s = Create(64)
-	require.Len(t, s, 64)
+	require.Len(t, Create(32), 32)
+	require.Len(t, Create(64), 64)
 }
 
 func BenchmarkCreate(b *testing.B) {
